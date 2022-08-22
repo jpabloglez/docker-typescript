@@ -1,0 +1,8 @@
+FROM node:lts
+
+RUN npm install -g typescript
+
+WORKDIR /var/www/html/app
+
+ADD ./app/* . 
+

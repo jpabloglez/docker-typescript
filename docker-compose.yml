@@ -1,0 +1,14 @@
+version: "3.4"
+services:
+  typescript:
+    build:
+      context: .
+      dockerfile: Dockerfile.typescript
+    image: typescript
+    container_name: typescript
+    entrypoint: /bin/bash
+    ports:
+      - 127.0.0.1:7000:7000
+    volumes:
+      - ./app/:/var/www/html/app
+    tty: true
