@@ -6,3 +6,5 @@ WORKDIR /var/www/html/app
 
 ADD ./app/* . 
 
+EXPOSE 7000
+

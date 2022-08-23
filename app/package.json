@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
-    "dev": "node app.js"
+    "dev": "node ./build/index.js"
   },
   "repository": {
     "type": "git",
@@ -17,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/jpabloglez/docker-typescript/issues"
   },
-  "homepage": "https://github.com/jpabloglez/docker-typescript#readme"
+  "homepage": "https://github.com/jpabloglez/docker-typescript#readme",
+  "dependencies": {
+    "@types/express": "^4.17.13",
+    "express": "^4.18.1"
+  }
 }
